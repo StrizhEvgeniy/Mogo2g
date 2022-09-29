@@ -192,6 +192,133 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 24px;
 }
 
+/* Standart */
+.standart__section {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.standart__container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.standart__upper__title {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.standart__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #333;
+
+    position: relative;
+
+    margin-bottom: 90px;
+}
+
+.standart__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+    
+    margin-top: 40px;
+
+    background-color:#f38181;
+}
+
+.standart__text{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* About */
+.image__about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    position: relative;
+    background-color: #95e1d3;
+}
+
+
+.about__img__gradient{
+    background: linear-gradient(
+        to bottom,#f38181,
+        #fce38a);
+    transition: .2s linear;
+    
+}
+
+.about__item:hover .about__img__gradient{
+    transform: translate3d(
+        -10px,-10px,0);
+    
+    
+}
+
+.about__img{
+    display: block;
+    transition: .2s linear;
+    
+}
+
+.about__item:hover .about__img {
+    opacity: 0.1;
+}
+
+.about__icon {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate3d(
+        -50%,-50%,0);
+    
+    opacity: 0;
+
+    transition: .2s linear;
+}
+
+.about__text{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate3d(
+        -50%,-50%,0);
+    
+    opacity: 0;
+
+    transition: .2s linear;
+}
+
+.about__item:hover .about__text,
+.about__item:hover .about__icon{
+    opacity: 1;
+}
+
 
 
 

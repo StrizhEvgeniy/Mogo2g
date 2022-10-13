@@ -401,6 +401,92 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+/* Service What We Do */
+.service__wd__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__wd__table {
+    width: 48%;
+}
+
+.table__item {
+    padding: 25px 0 0;
+    margin-bottom: 10px;
+
+    position: relative;
+
+    border: 1px solid #e5e5e5;
+}
+
+.table__item__icon {
+    font-size: 30px;
+    color: #95e1d3;
+
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.table__item__title {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+
+    padding-bottom: 25px;
+
+    margin-left: 80px;
+}
+
+.table__item__text{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+
+    display: none;
+
+    padding: 20px 50px 25px 20px;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+.table__item.active .table__item__text {
+    display: block;
+}
 
 
+.table__item__arrow {
+    color: rgba(255, 255, 255, 0) ;
+
+    position: absolute;
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.table__item__arrow::after {
+    content: "";
+    display: block;
+
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: rotate(45deg);
+
+    border-bottom: 4px solid #ccc;
+    border-right: 4px solid #ccc;
+}
+
+.table__item.active .table__item__arrow {
+    top: 35px;
+}
 

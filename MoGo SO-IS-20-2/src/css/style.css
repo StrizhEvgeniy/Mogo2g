@@ -763,6 +763,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .brands__item {
     width: 10%;
+<<<<<<< HEAD
 }
 
 
@@ -860,4 +861,6 @@ h1,h2,h3,h4,h5,h6 {
         ../img/clients/clients_bg.jpg)
         center no-repeat;
         background-size: cover;
+=======
+>>>>>>> adc48865e1c2be2e115b955b344e494f57abab6d
 }

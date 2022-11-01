@@ -925,8 +925,17 @@ h1,h2,h3,h4,h5,h6 {
 
 
 /* Blog */
+.section__blog {
+    margin-bottom: 120px;
+}
+
+.blog__content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .blog__item {
-    
+    width: 32%;
 }
 
 .blog__img {
@@ -974,4 +983,150 @@ h1,h2,h3,h4,h5,h6 {
 
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+}
+
+.blog__hr {
+    opacity: 0.5;
+
+    margin-bottom: 15px;
+}
+
+.blog__activity {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.blog__visited {
+    margin-right: 15px;
+
+    color: #95e1d3;
+}
+
+.blog__comments {
+    color:#95e1d3;
+}
+
+.visited__text {
+    color: #999999;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog__comments__text {
+
+    color: #999999;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Map */
+.section__map {
+    width: 100%;
+    height: 200px;
+    background: url(
+        ../img/map_bg.jpg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map__icon {
+    color: #f38181;
+    font-size: 32px;
+    
+    padding-top: 55px;
+}
+
+.map__title {
+
+    position: relative;
+    margin-top: 20px;
+
+    color: #f38181;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.map__title::after {
+    content: "";
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+
+    transform: translateX(-50%);
+}
+
+
+/* Footer */
+.footer {
+    margin-top: 75px;
+}
+
+.footer__info {
+    width: 40%;
+}
+
+.footer__logo {
+    font-weight: 700;
+    font-size: 46px;
+    color:#ccc;
+
+    margin-bottom: 40px;
+}
+
+.footer__info__text {
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+
+    margin-bottom: 50px;
+}
+
+.footer__folower__num {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+.footer__folower__text {
+    color: #333;
+}
+
+.footer__hr {
+    opacity: 0.5;
+    margin: 20px 0;
+}
+
+.footer__social__text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+
+    margin-right: 20px;
+}
+
+.footer__social__item {
+    margin-right: 5px;
+
+    color: #95e1d3;
+    font-size: 17px;
 }

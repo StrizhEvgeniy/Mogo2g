@@ -34,8 +34,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Header */
 .intro__header {
-    display: flex;
-    justify-content: space-between;
+    
     padding-top: 30px;
 
     color: #fff;
@@ -44,13 +43,13 @@ h1,h2,h3,h4,h5,h6 {
 .header__logo {
     font-size: 30px;
     font-weight: 700;
+    color: #fff;
 }
 
 .nav__item {
     display: inline-block;
     position: relative;
     top: 15px;
-    padding: 0 20px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;

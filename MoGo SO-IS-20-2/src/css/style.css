@@ -134,7 +134,7 @@ h1,h2,h3,h4,h5,h6 {
 .logo__button {
     width: 15%;
 
-    padding: 10px 30px;
+    padding: 0.8% 2.5%;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
@@ -335,6 +335,8 @@ h1,h2,h3,h4,h5,h6 {
     left: 50%;
     bottom: -40px;
 
+    white-space: nowrap;
+
     transform: translateX(-50%);
 }
 
@@ -528,8 +530,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .service__wd__img {
-    width: 570px;
-    height: 380px;
+    width: 48%;
+    height: 54vh;
 }
 
 .service__wd__table {
@@ -537,8 +539,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .table__item {
-    padding: 25px 0 0;
-    margin-bottom: 10px;
+    padding: 3.5vh 0 0;
+    margin-bottom: 1.4vh;
 
     position: relative;
 
@@ -550,8 +552,8 @@ h1,h2,h3,h4,h5,h6 {
     color: #95e1d3;
 
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 1.6vw;
+    top: 2.8vh;
 }
 
 .table__item__title {
@@ -560,9 +562,9 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
     font-size: 18px;
 
-    padding-bottom: 25px;
+    padding-bottom: 3.6vh;
 
-    margin-left: 80px;
+    margin-left: 7vw;
 }
 
 .table__item__text{
@@ -574,7 +576,7 @@ h1,h2,h3,h4,h5,h6 {
 
     display: none;
 
-    padding: 20px 50px 25px 20px;
+    padding: 2.8vh 4vw 3.5vh 1.6vw;
 
     border-top: 1px solid #e5e5e5;
 }
@@ -588,7 +590,7 @@ h1,h2,h3,h4,h5,h6 {
     color: rgba(255, 255, 255, 0) ;
 
     position: absolute;
-    right: 10px;
+    right: 0.8vw;
     top: 50%;
 
     transform: translateY(-50%);
@@ -611,22 +613,29 @@ h1,h2,h3,h4,h5,h6 {
     border-right: 4px solid #ccc;
 }
 
+.table__item.active .table__item__arrow::after {
+    
+    border-top: 4px solid #ccc;
+    border-left: 4px solid #ccc;
+    border-bottom: none;
+    border-right: none;
+}
+
 .table__item.active .table__item__arrow {
-    top: 35px;
+    top: 5.7vh;
 }
 
 
 /* Comments */
 .section__comments {
     background-color: #f8f8f8;
-    padding: 70px 0;
+    padding: 10vh 0;
 
     position: relative;
 }
 
 .section__comments__second {
-
-    padding: 130px 0;
+    padding: 18.6vh 0;
 
     position: relative;
 }
@@ -636,22 +645,30 @@ h1,h2,h3,h4,h5,h6 {
     color: #95e1d3;
 
     position: absolute;
-    left: 110px;
+    left: 9vw;
     top: 50%;
 
     transform: translateY(-50%);
 
-    padding: 40px;
+    padding: 5.7vh 3.3vw;
 
     border: 3px solid #95e1d3;
 }
 
 .comments__icon__second{
+    width: 17.5vw;
+    height: 17.5vw;
+
     position: absolute;
-    left: 80px;
+    left: 6.6vw;
     top: 50%;
 
     transform: translateY(-50%);
+}
+
+.comments__icon__second img {
+    width: 17.5vw;
+    height: 17.5vw;
 }
 
 .comments__text {
@@ -661,9 +678,9 @@ h1,h2,h3,h4,h5,h6 {
     font-style: italic;
     font-family: 'Roboto', sans-serif;
     
-    margin-left: 320px;
-    margin-right: 110px;
-    margin-bottom: 10px;
+    margin-left: 26.6vw;
+    margin-right: 9vw;
+    margin-bottom: 1.4vh;
 }
 
 .comments__author {
@@ -673,18 +690,18 @@ h1,h2,h3,h4,h5,h6 {
 
     position: relative;
 
-    margin-left: 390px;
+    margin-left: 32.4vw;
 }
 
 .comments__author::before {
     content:"";
     display: block;
 
-    width: 60px;
+    width: 5vw;
     height: 3px;
 
     position: absolute;
-    left: -70px;
+    left: -5.8vw;
     top: 60%;
 
     background-color: #f38181; 
@@ -697,7 +714,7 @@ h1,h2,h3,h4,h5,h6 {
 .prev__btn{
     position: absolute;
     top: 50%;
-    left: 20px;
+    left: 1.6vw;
 
     color: rgba(0, 0, 0, 0);
 
@@ -724,7 +741,7 @@ h1,h2,h3,h4,h5,h6 {
 .next__btn {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 1.6vw;
 
     color: rgba(0, 0, 0, 0);
 
@@ -749,14 +766,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .section__team {
-    margin-bottom: 130px;
+    margin-bottom: 18.5vh;
 }
 
 
 /* Brands */
 .section__brands {
     background-color: #f8f8f8;
-    padding: 70px 0;
+    padding: 10vh 0;
 }
 
 .brands__flex {
@@ -806,7 +823,7 @@ h1,h2,h3,h4,h5,h6 {
 
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 12vh;
 
     transform: translateX(-50%);
 
@@ -822,7 +839,9 @@ h1,h2,h3,h4,h5,h6 {
 
     position: absolute;
     left: 50%;
-    top: 54%;
+    top: 17vh;
+
+    white-space: nowrap;
 
     transform: translateX(-50%);
 
@@ -839,13 +858,27 @@ h1,h2,h3,h4,h5,h6 {
 
     opacity: 0;
 
+    white-space: nowrap;
+
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 20.5vh;
 
     transform: translateX(-50%);
 
     transition: .2s linear;
+}
+
+.work__item_medusa .work__title {
+    top: 34vh;
+}
+
+.work__item_medusa .work__icon {
+    top: 24vh;
+}
+
+.work__item_medusa .work__text {
+    top: 41vh;
 }
 
 .work__item:hover .work__icon,
@@ -857,7 +890,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Clients */
 .section__clients {
-    height: 100vh;
+    padding-bottom: 10vh;
     width: 100%;
 
     background: url(
@@ -870,7 +903,7 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-between;
     
-    margin-bottom: 70px;
+    margin-bottom: 10vh;
 }
 
 .clients__item {
@@ -878,14 +911,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .clients__img {
+    width: 9vw;
+    height: 9vw;
+
     position: absolute;
     top: 0;
-    left: 40px;
+    left: 3.3vw;
 }
 
 .clients__name {
-    padding-left: 180px;
-    margin-bottom: 10px;
+    padding-left: 15vw;
+    margin-bottom: 1.4vh;
 
     font-weight: 700;
     text-transform: uppercase;
@@ -893,8 +929,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .clients__work {
-    padding-left: 180px;
-    margin-bottom: 45px;
+    padding-left: 15vw;
+    margin-bottom: 6.4vh;
 
     position: relative;
 
@@ -909,18 +945,18 @@ h1,h2,h3,h4,h5,h6 {
     content: "";
     display: block;
 
-    width: 60px;
+    width: 5vw;
     height: 3px;
 
     background-color: #f38181;
 
     position: absolute;
-    bottom: -22px;
+    bottom: -3.1vh;
 }
 
 .clients__text {
-    padding-left: 180px;
-    padding-right: 45px;
+    padding-left: 15vw;
+    margin-bottom: 6.4vh;
 
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -945,6 +981,11 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
 
     margin-bottom: 15px;
+}
+
+.blog__img img {
+    width: 30vw;
+    height: 34vh;
 }
 
 .blog__date {
@@ -1146,10 +1187,11 @@ h1,h2,h3,h4,h5,h6 {
 .footer__form {
     display: flex;
 
-    margin-bottom: 70px;
+    margin-bottom: 10vh;
 }
 
 .footer__form__input {
+    width: 16.3vw;
     padding: 15px;
 
     outline-color: #95e1d3;
@@ -1168,7 +1210,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .footer__form__btn {
-    padding: 18px 35px;
+    width: 12.8vw;
+    padding: 2.6vh 2.9vw;
 
     background-color: #95e1d3;
 
@@ -1216,6 +1259,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .blog__item__img {
+    width: 10vw;
+    height: 11.4vh;
+
     position: absolute;
     left: 0;
     top: 0;
